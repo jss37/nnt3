@@ -256,7 +256,7 @@
                         <div class="instructionRow" style="background-color:#c6e0b3;height:80px;width:220%;padding-top:10px;">
                             <span class="instructionLabel"style="font-size: 1vw;" ><u style="font-size:1.5vw;">STEP 3.</u> Select PM<sub>2.5</sub> concentration <br>converted from the daily AQI for PM<sub>2.5</sub></sub><sup>2</sup></span><br>
                             
-                            <span id="totalPatientsTreatmentValue" class="inputNumberDisplay" style="color:#c6e0b3;">10</span>
+                            <span id="totalPatientsTreatmentValue" class="inputNumberDisplay" style="color:#c6e0b3;">13</span>
                             
                         </div>
                         <div class="instructionRow" style="background-color: #e1efdb ;height:80px;width:220%;padding-top:10px;">
@@ -266,7 +266,7 @@
                            
                         </div>
                         <div class="instructionRow" style="height:1.2vh;width:100%">
-                            <span class="instructionLabel" style="float: left;margin-left:25vw;padding-top: 1px;font-size:1.7vw;">NNT<sub>1</sub> (day)<sup>4</sup>:</span>
+                            <span class="instructionLabel" style="float: left;margin-left:25vw;padding-top: 1.5px;font-size:1.7vw;">NNT<sub>1</sub> (day)<sup>4</sup>:</span>
                         </div>
                     </div>
                 </td>
@@ -356,13 +356,13 @@
                                 <div class="sliderContainer2">
                                     <label class="sliderLabel" for="riskIncrease2" title="Use Arrow Keys For Precise Selection";>
                                         
-                                        <input type="range" id="riskIncrease2" class="slider2" min="0.5" max="2" step=".1" oninput="calculateNNT2()" tabindex="0">
+                                        <input type="range" id="riskIncrease2" class="slider2" min="0.5" max="2" step=".5" oninput="calculateNNT2()" tabindex="0">
                                         
                                     </label>
                                 </div>
                                 </div>
                             <div class="Range" style="font-size:1em;padding-top: 50px;padding-bottom: 20px;height: 22px;color:black;  " >
-                                <span >10-500<span style="font-size:1vw;">(µg/m<sup>3</sup>)</span> </span>
+                                <span >13-500<span style="font-size:1vw;">(µg/m<sup>3</sup>)</span> </span>
                                 <span id="totalPatientsTreatmentValue2" class="inputNumberDisplay" style="color:#c6e0b3;">13</span>
                                 <div class="sliderContainer2">
                                     <label class="sliderLabel" for="totalPatientsTreatment2" style="color:black;margin-top:.5vw;" title="Use Arrow Keys For Precise Selection">
@@ -491,7 +491,7 @@
             document.getElementById('riskIncreaseDisplay2').innerText = d;
 
             // Check if the inputs are valid
-            if (isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d) || a < 0 || b < 4 || b > 500 || c < 15 || c > 100)|| d < .5 || d > 2) {
+            if (isNaN(a) || isNaN(b) || isNaN(c) || a < 0 || b < 4 || b > 500 || c < 15 || c > 100) {
                 document.getElementById('nntResult2').innerHTML = "Invalid Input";
             } else {
                 // Calculate X, Y, Z, and NNT
