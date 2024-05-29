@@ -256,7 +256,7 @@
                         <div class="instructionRow" style="background-color:#c6e0b3;height:80px;width:220%;padding-top:10px;">
                             <span class="instructionLabel"style="font-size: 1vw;" ><u style="font-size:1.5vw;">STEP 3.</u> Select PM<sub>2.5</sub> concentration <br>converted from the daily AQI for PM<sub>2.5</sub></sub><sup>2</sup></span><br>
                             
-                            <span id="totalPatientsTreatmentValue" class="inputNumberDisplay" style="color:#c6e0b3;">13</span>
+                            <span id="totalPatientsTreatmentValue" class="inputNumberDisplay" style="color:#c6e0b3;">10</span>
                             
                         </div>
                         <div class="instructionRow" style="background-color: #e1efdb ;height:80px;width:220%;padding-top:10px;">
@@ -285,7 +285,7 @@
                             0.5 to 2.0 (%)
                             <div class="sliderContainer">
                                 <label class="sliderLabel" for="riskIncrease" title="Use Arrow Keys For Precise Selection">
-                                    <input type="range" id="riskIncrease" class="slider" min=".5" max="2" step=".5" oninput="calculateNNT()" tabindex="0">
+                                    <input type="range" id="riskIncrease" class="slider" min=".5" max="2" step=".1" oninput="calculateNNT()" tabindex="0">
                                     
                                 </label>
                             </div>
@@ -295,7 +295,7 @@
                             <div class="sliderContainer">
                                 <label class="sliderLabel" for="totalPatientsTreatment" style="color:black;" title="Use Arrow Keys For Precise Selection">
                                    
-                                    <input type="range" id="totalPatientsTreatment" class="slider" min="13" max="500" step="1" oninput="calculateNNT()" style="background-color: black;" tabindex="0">
+                                    <input type="range" id="totalPatientsTreatment" class="slider" min="10" max="500" step="1" oninput="calculateNNT()" style="background-color: black;" tabindex="0">
                         
                                 </label>
                             </div>
@@ -306,7 +306,7 @@
                             <div class="sliderContainer" style="width:10%">
                                 <label class="sliderLabel" for="eventRateControl" style="color:black; " title="Use Arrow Keys For Precise Selection">
                                   
-                                    <input type="range" id="eventRateControl" class="slider" min="15" max="50" step="1" oninput="calculateNNT()" style="background-color: black; " tabindex="0">
+                                    <input type="range" id="eventRateControl" class="slider" min="15" max="100" step="1" oninput="calculateNNT()" style="background-color: black; " tabindex="0">
                             
                                 </label>
                             </div>
@@ -356,7 +356,7 @@
                                 <div class="sliderContainer2">
                                     <label class="sliderLabel" for="riskIncrease2" title="Use Arrow Keys For Precise Selection";>
                                         
-                                        <input type="range" id="riskIncrease2" class="slider2" min="0.5" max="4" step=".5" oninput="calculateNNT2()" tabindex="0">
+                                        <input type="range" id="riskIncrease2" class="slider2" min="0.5" max="4" step=".1" oninput="calculateNNT2()" tabindex="0">
                                         
                                     </label>
                                 </div>
@@ -367,18 +367,18 @@
                                 <div class="sliderContainer2">
                                     <label class="sliderLabel" for="totalPatientsTreatment2" style="color:black;margin-top:.5vw;" title="Use Arrow Keys For Precise Selection">
                                        
-                                        <input type="range" id="totalPatientsTreatment2" class="slider2" min="13" max="500" step="1" oninput="calculateNNT2()" style="background-color: black;" tabindex="0">
+                                        <input type="range" id="totalPatientsTreatment2" class="slider2" min="10" max="500" step="1" oninput="calculateNNT2()" style="background-color: black;" tabindex="0">
                             
                                     </label>
                                 </div>
                             </div>
                             <div class="Range" style="font-size:1em;padding-top: 50px;padding-bottom: 20px;height: 22px;color:black;" >
-                                15-50 (%)
+                                15-100 (%)
                                 <span id="eventRateControlValue2" class="inputNumberDisplay" style="color: #e1efdb;margin-top:50px">15</span>
                                 <div class="sliderContainer2" style="width:10%">
                                     <label class="sliderLabel" for="eventRateControl2" style="color:black;margin-top:.5vw; " title="Use Arrow Keys For Precise Selection">
                                       
-                                        <input type="range" id="eventRateControl2" class="slider2" min="15" max="50" step="1" oninput="calculateNNT2()" style="background-color: black; " tabindex="0">
+                                        <input type="range" id="eventRateControl2" class="slider2" min="15" max="100" step="1" oninput="calculateNNT2()" style="background-color: black; " tabindex="0">
                                 
                                     </label>
                                 </div>
